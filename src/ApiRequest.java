@@ -6,8 +6,8 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ApiRequest {
-    public ApiRequest getApi() {
-        String apiUrl = "https://v6.exchangerate-api.com/v6/123e90fa4658fb5687e2d1b1/latest/USD";
+    public ApiRequest getApi(String currencyFrom, String currencyTo, String value) {
+        String apiUrl = "https://v6.exchangerate-api.com/v6/123e90fa4658fb5687e2d1b1/pair/" + currencyFrom + "/" + currencyTo + "/" + value;
 
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(apiUrl)).build();
 
