@@ -1,4 +1,5 @@
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -6,14 +7,32 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ApiRequest {
-    public ApiRequest getApi(String currencyFrom, String currencyTo, String value) {
-        String apiUrl = "https://v6.exchangerate-api.com/v6/123e90fa4658fb5687e2d1b1/pair/" + currencyFrom + "/" + currencyTo + "/" + value;
+    String base_code;
+    String currencyTo;
+    double value;
 
-        HttpRequest request = HttpRequest.newBuilder().uri(URI.create(apiUrl)).build();
+// CONSTRUCTOR
+    public ApiRequest(ValueConverter valueConverter) {
+        base_code = valueConverter.getBaseCode();
+        currencyTo = valueConverter.getTargetCode();
+        value = valueConverter.getConversionResult();
+    }
+
+// METHODS
+    public String getApiValue() {
+        String apiUrl = "https://v6.exchangerate-api.com/v6/123e90fa4658fb5687e2d1b1/pair/" + base_code + "/" + currencyTo + "/" + value;
 
         try {
-            HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
-            return new Gson().fromJson(response.body(), ApiRequest.class);
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+            HttpClient httpClient = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder().uri(URI.create(apiUrl)).build();
+            HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+            String json = response.body();
+
+            ValueConverter valueConverter = gson.fromJson(json, ValueConverter.class);
+
+            return valueConverter.toString();
         } catch (Exception e) {
             throw new RuntimeException("Nao foi possivel converter o valor.");
         }
