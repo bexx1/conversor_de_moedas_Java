@@ -2,6 +2,7 @@ public class ValueConverter {
     private String base_code;
     private String target_code;
     private double conversion_result;
+    private double conversion_rate;
 
 // CONSTRUCTOR
     public ValueConverter(String base_code, String target_code, double conversion_result) {
@@ -20,15 +21,15 @@ public class ValueConverter {
     public double getConversionResult() {
         return conversion_result;
     }
+    public double getConversion_rate() {
+        return conversion_rate;
+    }
 
 // ToString
-
     @Override
     public String toString() {
-        return "ValueConverter{" +
-                "currencyFrom='" + base_code + '\'' +
-                ", currencyTo='" + target_code + '\'' +
-                ", value='" + conversion_result + '\'' +
-                '}';
+        return String.format("""
+                %.3f %s converted to %s equals to: %.3f.
+                """, (this.conversion_result / this.conversion_rate), this.base_code, this.target_code, this.conversion_result);
     }
 }
