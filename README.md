@@ -22,3 +22,9 @@ https://github.com/bexx1/currency_converter_Java/assets/114870774/be9c92b8-818e-
 <p>Some other currency conversion apis</p>
 <li><a href="https://openexchangerates.org/" target="_blank">Open Exchange Rates</a></li>
 <li><a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko API</a></li>
+
+<h2>Badge</h2>
+<p>I'm happy to report that I managed to finish the Currency Converter challenge!</p>
+<div align="center">
+  <img src="https://github.com/bexx1/currency_converter_Java/assets/114870774/5c1badbe-af54-44ca-b449-e3dd8e450895"/>
+</div>
