@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fedf3fd-eba8-4a32-9c70-e9b05a0bf3fe" name="Changes" comment="" />
+    <list default="true" id="3fedf3fd-eba8-4a32-9c70-e9b05a0bf3fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/conversor_de_moedas_Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/currency_converter_Java.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714170208751</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="renaming the project">
+      <option name="closed" value="true" />
+      <created>1714170544922</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714170544922</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +173,7 @@
     <MESSAGE value="introducing the http request to get the api info" />
     <MESSAGE value="adding a class for the http request" />
     <MESSAGE value="adjusting the api url" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusting the api url" />
+    <MESSAGE value="renaming the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="renaming the project" />
   </component>
 </project>
