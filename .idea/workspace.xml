@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fedf3fd-eba8-4a32-9c70-e9b05a0bf3fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ValueConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ApiRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -53,7 +53,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "value-converter",
+    "git-widget-placeholder": "create-menu",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/cursos/Alura/One - MCIO/Formaçao Java/gson-2.10.1.jar",
     "project.structure.last.edited": "Modules",
@@ -155,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714315102082</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="introducing the ValueConverter class and fixing the names to match the names in the API">
+      <option name="closed" value="true" />
+      <created>1714320397053</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714320397053</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +198,7 @@
     <MESSAGE value="adding a class for the http request" />
     <MESSAGE value="adjusting the api url" />
     <MESSAGE value="renaming the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="renaming the project" />
+    <MESSAGE value="introducing the ValueConverter class and fixing the names to match the names in the API" />
+    <option name="LAST_COMMIT_MESSAGE" value="introducing the ValueConverter class and fixing the names to match the names in the API" />
   </component>
 </project>
