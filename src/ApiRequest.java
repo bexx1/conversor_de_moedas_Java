@@ -19,7 +19,7 @@ public class ApiRequest {
     }
 
 // METHODS
-    public String getApiValue() {
+    public double getApiValue() {
         String apiUrl = "https://v6.exchangerate-api.com/v6/123e90fa4658fb5687e2d1b1/pair/" + base_code + "/" + currencyTo + "/" + value;
 
         try {
@@ -32,7 +32,7 @@ public class ApiRequest {
 
             ValueConverter valueConverter = gson.fromJson(json, ValueConverter.class);
 
-            return valueConverter.toString();
+            return valueConverter.getConversionResult();
         } catch (Exception e) {
             throw new RuntimeException("Nao foi possivel converter o valor.");
         }
